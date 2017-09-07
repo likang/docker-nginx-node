@@ -4,4 +4,4 @@ RUN apt-get update \
   && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
   && apt-get install -y nodejs
 
-CMD ["nginx", "-g", "daemon off; error_log /dev/stdout info;"]
+CMD ["nginx", "-g", "daemon off; error_log /dev/stdout warn;"]
